@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 500px;
+            margin: auto;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        h1 {
+            background-color: aqua;
+            box-shadow: 4px 4px 10px gray;
+            text-align: center;
+            padding: 10px;
+        }
+
+        input {
+            background-color: bisque;
+            padding: 10px;
+
+        }
+
+        #btn {
+            background-color: green;
+            padding: 5px 20px;
+            border: none;
+            outline: 1px solid red;
+            cursor: pointer;
+            outline-offset: 4px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Gross Salary=HRA(house rent allowance) +Basic pay+other allowances -->
+        <h1>Calculate Gross Salary</h1>
+
+        <input type="number" placeholder="Enter Basic Pay..." name="" id="pay">
+        <br><br>
+        <input type="text" placeholder="Enter Your Name..." name="" id="fname">
+
+        <br><br>
+        <button onclick="calculate()" id="btn">Calculate</button>
+        <p id="p1"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
